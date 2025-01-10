@@ -1,0 +1,19 @@
+[project]
+name = "research-paper"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "iamramishwar99",email = "iamramishwar99@gmail.com"}]
+packages = [
+    { include = "fetch_papers", from = "research_papers_fetch" }
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "requests (>=2.32.3,<3.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
